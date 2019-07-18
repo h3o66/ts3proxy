@@ -88,7 +88,7 @@ python3 -m ts3proxy
 ```
 ### Auto Install Script
 
-
+```cd /home/ && git clone https://github.com/jake-fox/ts3proxy.git && chmod u=x install.sh && ./install.sh```
 
 ### Editable installation: only for developers
 
