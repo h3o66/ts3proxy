@@ -5,6 +5,7 @@ mv /home/ts3proxy/ts3proxy.service /lib/systemd/system/
 cd /home/ts3proxy/
 chmod u+x *.sh
 chmod u+x *.py
+cp -n config.example.yml config.yml
 nano /config.yml
 
 systemctl daemon-reload
