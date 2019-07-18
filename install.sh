@@ -19,7 +19,7 @@ echo "sudo systemctl stop ts3proxy.service"
 echo "sudo systemctl restart ts3proxy.service"
 echo "sudo systemctl status ts3proxy.service"
 echo "Restart Required"
-echo "do you accept <Y> <N>
+echo "do you accept <Y> <N>"
 read
 if [ $reply = y ]
 then 
