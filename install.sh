@@ -5,7 +5,7 @@ mv /home/ts3proxy/ts3proxy.service /lib/systemd/system/
 cd /home/ts3proxy/
 sudo chmod u+x *.sh
 sudo chmod u+x *.py
-cp -n config.example.yml config.yml
+sudo cp -n config.example.yml config.yml
 nano /config.yml
 
 systemctl daemon-reload
@@ -21,7 +21,7 @@ echo "sudo systemctl status ts3proxy.service"
 echo "Restart Required"
 echo "do you accept <Y> <N>"
 read
-if [ $reply = y ]
+if [ $reply y ] || [ $reply Y ]
 then 
 reboot
 fi
