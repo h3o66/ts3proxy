@@ -10,6 +10,6 @@ chmod u+x *.py
 systemctl daemon-reload
 sudo systemctl enable ts3proxy.service
 sudo systemctl start ts3proxy.service
-echo Install complete, is now accessed as <ts3proxy.service> restarting now
+echo "Install complete, is now accessed as <ts3proxy.service> restarting now"
 sleep 10
 reboot
