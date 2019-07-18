@@ -11,6 +11,7 @@ nano /config.yml
 sudo systemctl daemon-reload
 sudo systemctl enable ts3proxy.service
 sudo systemctl start ts3proxy.service
+echo "https://github.com/jake-fox/ts3proxy"
 echo "Install complete, is now accessed as <ts3proxy.service>"
 echo "service is set to always restart"
 echo "sudo systemctl enable ts3proxy.service"
@@ -19,7 +20,7 @@ echo "sudo systemctl stop ts3proxy.service"
 echo "sudo systemctl restart ts3proxy.service"
 echo "sudo systemctl status ts3proxy.service"
 echo "Restart Required"
-echo "do you accept <Y> <N>"
+echo "Do you accept <Y> <N>"
 read reply
 if [ "$reply" = "y" ] || [ "$reply" = "Y" ];
 then 
