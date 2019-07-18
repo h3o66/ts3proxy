@@ -21,7 +21,7 @@ echo "sudo systemctl status ts3proxy.service"
 echo "Restart Required"
 echo "do you accept <Y> <N>"
 read
-if [ $reply y ] || [ $reply Y ]
+if [ $reply -eq y ] || [ $reply -eq Y ]
 then 
 reboot
 fi
