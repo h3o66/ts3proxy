@@ -1,4 +1,13 @@
-# TS3Proxy
+# TS3Proxy, Modified to run a auto restart service with an auto install script for ease of install on multiple machines.
+Note only tested on ubuntu 16.04
+
+### Auto Install Script
+
+```cd /home/ && git clone https://github.com/jake-fox/ts3proxy.git && cd /home/ts3proxy && chmod u+x install.sh && ./install.sh```
+
+
+
+# TS3Proxy by https://github.com/Kandru/ts3proxy
 
 TS3Proxy aims to be a complete solution for a TeamSpeak 3 proxy. It allows you
 to hide the original location of your TeamSpeak 3 server and may be a good
@@ -54,47 +63,3 @@ The requirements of TS3Proxy are:
 
 Just unzip the latest release (or master branch) zip file and open a terminal
 in the unzipped folder and do the following steps.
-
-### Recommended installation
-
-The recommended way to install TS3Proxy is using the `setup.py`. This script
-automatically calls pip (the Python package manager). Pip installs the
-`ts3proxy` package to the Python site-packages and creates a script called
-`ts3proxy` in your executable path.
-
-```bash
-sudo ./setup.sh
-```
-
-And just run it afterwards with an NON-ROOT user via command line:
-
-```bash
-ts3proxy
-```
-
-### Alternative installation: only install dependencies
-
-Install all dependencies:
-
-```bash
-apt-get install python3-yaml
-```
-
-If you don't want to install TS3Proxy itself, you have to start the proxy with
-a more complex command:
-
-```bash
-python3 -m ts3proxy
-```
-### Auto Install Script
-
-```cd /home/ && git clone https://github.com/jake-fox/ts3proxy.git && cd /home/ts3proxy && chmod u+x install.sh && ./install.sh```
-
-### Editable installation: only for developers
-
-If you are a developer and might want to use the `ts3proxy` script, you can
-install this package in editable mode by using the `-e` option:
-
-```bash
-pip3 install -e .
-```
