@@ -6,7 +6,7 @@ cd /home/ts3proxy/
 sudo chmod u+x *.sh
 sudo chmod u+x *.py
 sudo cp -n config.example.yml config.yml
-nano /config.yml
+nano config.yml
 
 sudo systemctl daemon-reload
 sudo systemctl enable ts3proxy.service
