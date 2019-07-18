@@ -11,6 +11,19 @@ nano /config.yml
 systemctl daemon-reload
 sudo systemctl enable ts3proxy.service
 sudo systemctl start ts3proxy.service
-echo "Install complete, is now accessed as <ts3proxy.service> restarting now"
-sleep 10
+echo "Install complete, is now accessed as <ts3proxy.service>"
+echo "service is set to always restart"
+echo "sudo systemctl enable ts3proxy.service"
+echo "sudo systemctl start ts3proxy.service"
+echo "sudo systemctl stop ts3proxy.service"
+echo "sudo systemctl restart ts3proxy.service"
+echo "sudo systemctl status ts3proxy.service"
+echo "Restart Required"
+echo "do you accept <Y> <N>
+read
+if [ $reply = y ]
+then 
 reboot
+fi
+
+
