@@ -23,9 +23,10 @@ echo "do you accept <Y> <N>"
 read reply
 if [ "$reply" = "y" ] || [ "$reply" = "Y" ];
 then 
-echo "reboot"
-echo "then"
+echo "Rebooting Now"
+reboot
 fi
-echo "ended"
-echo "$reply"
+echo "Aborting Reboot"
+echo "DONE"
+
 
