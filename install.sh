@@ -27,4 +27,5 @@ echo "reboot"
 echo "then"
 fi
 echo "ended"
+echo "$reply"
 
