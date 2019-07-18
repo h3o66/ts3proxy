@@ -3,7 +3,7 @@ apt-get update -y
 apt-get install python3-yaml
 mv /home/ts3proxy/ts3proxy.service /lib/systemd/system/
 cd /home/ts3proxy/
-chmod u+x *sh
+chmod u+x *.sh
 ./setup.sh
 
 systemctl daemon-reload
