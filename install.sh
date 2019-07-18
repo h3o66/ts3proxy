@@ -1,10 +1,10 @@
 #!/bin/bash
-apt-get update -y
-apt-get install python3-yaml
+sudo apt-get update
+sudo apt-get install python3-yaml
 mv /home/ts3proxy/ts3proxy.service /lib/systemd/system/
 cd /home/ts3proxy/
-chmod u+x *.sh
-chmod u+x *.py
+sudo chmod u+x *.sh
+sudo chmod u+x *.py
 cp -n config.example.yml config.yml
 nano /config.yml
 
