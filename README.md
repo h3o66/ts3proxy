@@ -86,6 +86,8 @@ a more complex command:
 ```bash
 python3 -m ts3proxy
 ```
+### Auto Install Script
+
 
 
 ### Editable installation: only for developers
