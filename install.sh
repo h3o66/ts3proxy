@@ -24,9 +24,11 @@ read reply
 if [ "$reply" = "y" ] || [ "$reply" = "Y" ];
 then 
 echo "Rebooting Now"
+sleep 2
 reboot
 fi
 echo "Aborting Reboot"
+sleep 1
 echo "DONE"
 
 
