@@ -1,14 +1,14 @@
 #!/bin/bash
 sudo apt-get update
 sudo apt-get install python3-yaml
-mv /home/ts3proxy/ts3proxy.service /lib/systemd/system/
+sudo mv /home/ts3proxy/ts3proxy.service /lib/systemd/system/
 cd /home/ts3proxy/
 sudo chmod u+x *.sh
 sudo chmod u+x *.py
 sudo cp -n config.example.yml config.yml
 nano /config.yml
 
-systemctl daemon-reload
+sudo systemctl daemon-reload
 sudo systemctl enable ts3proxy.service
 sudo systemctl start ts3proxy.service
 echo "Install complete, is now accessed as <ts3proxy.service>"
