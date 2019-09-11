@@ -1,4 +1,4 @@
-# TS3Proxy, Modified to run a auto restart service with an auto install script for ease of install on multiple machines.
+# TS3Proxy, Modified to run an auto restart service with an auto install script for ease of install on multiple machines.
 Note only tested on ubuntu 16.04
 
 ### Auto Install Script
